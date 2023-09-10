@@ -1,0 +1,22 @@
+<div class="main">
+	<h1 class="title">Documentation</h1>
+	<ng-container *ngFor="let details of CardDetailList; index as i">
+		<div [class]="i % 2 === 0 ? 'card' : 'card-reverse'">
+			<div class="card-content">
+				<ui5-title level="H2" class="card-title">{{ details.title }}</ui5-title>
+				<p class="card-desc">{{ details.desc }}</p>
+				<div>
+					<ui5-button design="Emphasized">Documentation</ui5-button>
+				</div>
+			</div>
+			<div class="images">
+				<img
+					class="image"
+					src="https://camel.apache.org/_/img/logo-d-f21b25ba38.svg"
+					height="100px"
+				/>
+				<img src="{{ details.logo }}" height="100px" />
+			</div>
+		</div>
+	</ng-container>
+</div>

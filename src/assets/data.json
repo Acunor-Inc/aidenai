@@ -1,0 +1,42 @@
+[
+	{
+		"logo": "https://camel.apache.org/_/img/logo-d-f21b25ba38.svg",
+		"title": "Camel Core",
+		"desc": "Apache Camel helps you integrate various systems consuming or producing data."
+	},
+	{
+		"logo": "https://camel.apache.org/_/img/knative-81c3109183.svg",
+		"title": "Camel K",
+		"desc": "Apache Camel K is a lightweight integration framework that runs natively on Kubernetes."
+	},
+	{
+		"logo": "https://camel.apache.org/_/img/quarkus-7633fa242d.svg",
+		"title": "Camel Quarkus",
+		"desc": "Apache Camel Quarkus packages 280+ Camel components as Quarkus extensions."
+	},
+	{
+		"logo": "https://camel.apache.org/_/img/apache-kafka-712a1f3ba0.svg",
+		"title": "Camel Kafka Connector",
+		"desc": "Apache Camel Kafka Connector embeds Camel within Kafka Connect."
+	},
+	{
+		"logo": "https://camel.apache.org/_/img/spring-boot-d50d225c05.svg",
+		"title": "Camel Spring Boot",
+		"desc": "Apache Camel Spring Boot runs Camel on Spring Boot and provides starters for Camel components."
+	},
+	{
+		"logo": "https://camel.apache.org/_/img/apache-karaf-e55039ae99.svg",
+		"title": "Camel Karaf",
+		"desc": "Apache Camel Karaf makes running Camel in the OSGi container."
+	},
+	{
+		"logo": "https://camel.apache.org/_/img/karavan-feb7559d76.svg",
+		"title": "Camel Karavan",
+		"desc": "Apache Camel Karavan is a mastering tool to facilitate integration and speed up development through the process visualization."
+	},
+	{
+		"logo": "https://camel.apache.org/_/img/jbang-123e48aa14.svg",
+		"title": "Camel JBang",
+		"desc": "The Camel CLI for easily getting started with Apache Camel."
+	}
+]

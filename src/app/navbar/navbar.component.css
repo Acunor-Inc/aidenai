@@ -1,0 +1,117 @@
+.nav {
+	position: sticky;
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	background-color: white;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+		rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+.navbar {
+	width: 95%;
+	margin: auto;
+	display: flex;
+	gap: 40px;
+	justify-content: space-between;
+	align-items: center;
+	height: 80px;
+}
+.navbar-logo {
+	height: 50px;
+}
+
+.navbar-list {
+	display: none;
+	display: flex;
+	list-style: none;
+	gap: 30px;
+	margin: 0;
+}
+.nav-link {
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 16px;
+	color: #e97826;
+}
+.nav-link:hover {
+	color: #f4a263;
+}
+.input {
+	display: flex;
+	gap: 20px;
+}
+.search-input {
+	width: 300px;
+	height: 40px;
+}
+.search-input:focus {
+	outline: none;
+}
+
+.search-icon {
+	margin-top: 10px;
+}
+.my-custom-class{
+	display: none;
+}
+#navMenu,
+#nav-search {
+	display: none;
+	width: 35px;
+}
+@media screen and (max-width: 1200px) {
+	.navbar-list{
+		display: none;
+	}
+	.active{
+		z-index: 2;
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		top: 80px;
+		right: 0;
+		width: 250px;
+		padding: 20px;
+		gap: 30px;
+		margin: 0;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+		background-color: white;
+		border-radius: 7px;
+	}
+
+	#navMenu {
+		display: block;
+		margin-top: 2px;
+		height: 39px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.search-input {
+		display: none;
+	}
+	#nav-search {
+		display: block;
+		margin-top: 2px;
+		height: 40px;
+		font-size: 18px;
+	}
+	.search-active {
+		position:absolute;
+		width:80%;
+		margin:auto;
+		display: flex;
+		right: 0;
+		left: 0;
+		justify-content: center;
+		top:90px;
+		display: block;
+	}
+}
+@media screen and (max-width: 330px) {
+	.navbar-logo {
+		width: 150px;
+	}
+
+	
+}
