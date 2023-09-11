@@ -3,7 +3,9 @@
 	<div class="card-container">
 		<ng-container *ngFor="let card of CardData">
 			<div class="card">
-				<img class="image" src="{{ card.logo }}" />
+				<ui5-avatar size="XL" shape="Square" class="image">
+					<img src="{{ card.logo }}" alt="Lamp" style="object-fit: contain">
+				</ui5-avatar>
 				<div class="card-content">
 					<p class="card-title">{{ card?.title }}</p>
 					<p class="card-desc">{{ card?.desc }}</p>

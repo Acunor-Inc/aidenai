@@ -10,12 +10,21 @@
 				</div>
 			</div>
 			<div class="images">
-				<img
-					class="image"
-					src="https://camel.apache.org/_/img/logo-d-f21b25ba38.svg"
-					height="100px"
-				/>
-				<img src="{{ details.logo }}" height="100px" />
+				
+				<ui5-avatar size="XL" shape="Square" class="image">
+					<img
+						class="image"
+						src="https://camel.apache.org/_/img/logo-d-f21b25ba38.svg"
+						height="100px"
+					/>
+				</ui5-avatar>
+				<ui5-avatar size="XL" shape="Square" class="image">
+					<img
+						src="{{ details.logo }}"
+						alt="Lamp"
+						style="object-fit: contain"
+					/>
+				</ui5-avatar>
 			</div>
 		</div>
 	</ng-container>

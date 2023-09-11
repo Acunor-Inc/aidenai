@@ -16,7 +16,7 @@ import "@ui5/webcomponents-icons/dist/menu2";
 import "@ui5/webcomponents-icons/dist/search";
 import { CardDetailsComponent } from './card-details/card-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
-
+import "@ui5/webcomponents/dist/Avatar.js";
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [AppComponent, CardComponent, CardDetailsComponent, NavbarComponent],
