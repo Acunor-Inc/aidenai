@@ -1,17 +1,19 @@
 <div>
-	<h1 class="title">Apache Camel Projects</h1>
-	<div class="card-container">
-		<ng-container *ngFor="let card of CardData">
-			<div class="card">
-				<img class="image" src="{{ card.logo }}" />
-				<div class="card-content">
-					<p class="card-title">{{ card?.title }}</p>
-					<p class="card-desc">{{ card?.desc }}</p>
-					<a routerLink="/card-details">
-						<ui5-button class="read-more" design="Attention"> Read More</ui5-button>
-					</a>
-				</div>
-			</div>
-		</ng-container>
-	</div>
+  <h1 class="title">Apache Camel Projects</h1>
+  <div class="card-container">
+    <ng-container *ngFor="let card of CardData">
+      <div class="card">
+        <img class="image" src="{{ card.logo }}" />
+        <div class="card-content">
+          <p class="card-title">{{ card?.title }}</p>
+          <p class="card-desc">{{ card?.desc }}</p>
+          <a routerLink="/card-details">
+            <ui5-button class="read-more" design="Attention">
+              Read More</ui5-button
+            >
+          </a>
+        </div>
+      </div>
+    </ng-container>
+  </div>
 </div>

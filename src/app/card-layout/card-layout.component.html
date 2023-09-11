@@ -1,0 +1,15 @@
+<div>
+  <h1 class="title">Apache Camel Projects</h1>
+  <div class="card-layout-container">
+    <ui5-card *ngFor="let card of CardData">
+      <ui5-list>
+        <ui5-li image="{{ card.logo }}" description="{{ card.desc }}"
+          >{{ card.title }}
+        </ui5-li>
+        <ui5-li>
+          <ui5-button design="Attention">Read More</ui5-button>
+        </ui5-li>
+      </ui5-list>
+    </ui5-card>
+  </div>
+</div>

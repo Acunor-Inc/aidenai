@@ -1,38 +1,50 @@
 <div class="nav">
-	<div class="navbar">
-		<div>
-			<a routerLink="/">
-				<img
-					class="navbar-logo"
-					alt="Logo"
-					src="https://aidenai.com/wp-content/uploads/2023/08/Asset-1-300x71.png"
-				/>
-			</a>
-		</div>
-		<div class="input">
-			<ui5-input
-				[class.search-active]="searchActive"
-				class="search-input"
-				id="dialogSearchInput"
-				placeholder="Search"
-			>
-				<ui5-icon
-					class="search-icon"
-					id="dialogSearchIcon"
-					slot="icon"
-					name="search"
-				></ui5-icon>
-			</ui5-input>
-			<ui5-button (click)="search()" id="nav-search" [attr.icon]="searchActive ? '' :'search'" tooltip="Search">{{searchActive?"X":""}}</ui5-button>
-			<ui5-button (click)="hamberger()" id="navMenu" [attr.icon]="hambergerActive ? '' :'menu2'" tooltip="Menu">{{hambergerActive?"X":""}}</ui5-button>
-		</div>
-		<ul class="navbar-list" [class.active]="hambergerActive">
-			<li (click)="hamberger()" class="nav-link">BLOG</li>
-			<li (click)="hamberger()" class="nav-link">DOCUMENTATION</li>
-			<li (click)="hamberger()" class="nav-link">COMMUNITY</li>
-			<li (click)="hamberger()" class="nav-link">DOWNLOAD</li>
-			<li (click)="hamberger()" class="nav-link">SECURITY</li>
-		</ul>
-	</div>	
+  <div class="navbar">
+    <div>
+      <a routerLink="/">
+        <img
+          class="navbar-logo"
+          alt="Logo"
+          src="https://aidenai.com/wp-content/uploads/2023/08/Asset-1-300x71.png"
+        />
+      </a>
+    </div>
+    <div class="input">
+      <ui5-input
+        [class.search-active]="searchActive"
+        class="search-input"
+        id="dialogSearchInput"
+        placeholder="Search"
+      >
+        <ui5-icon
+          class="search-icon"
+          id="dialogSearchIcon"
+          slot="icon"
+          name="search"
+        ></ui5-icon>
+      </ui5-input>
+      <ui5-button
+        (click)="search()"
+        id="nav-search"
+        [attr.icon]="searchActive ? '' : 'search'"
+        tooltip="Search"
+        >{{ searchActive ? "X" : "" }}</ui5-button
+      >
+      <ui5-button
+        (click)="hamberger()"
+        id="navMenu"
+        [attr.icon]="hambergerActive ? '' : 'menu2'"
+        tooltip="Menu"
+        >{{ hambergerActive ? "X" : "" }}</ui5-button
+      >
+    </div>
+    <ul class="navbar-list" [class.active]="hambergerActive">
+      <li routerLink="/card-layout" (click)="hamberger()" class="nav-link">
+        CARD LAYOUT
+      </li>
+      <li (click)="hamberger()" class="nav-link">COMMUNITY</li>
+      <li (click)="hamberger()" class="nav-link">DOWNLOAD</li>
+      <li (click)="hamberger()" class="nav-link">SECURITY</li>
+    </ul>
+  </div>
 </div>
-

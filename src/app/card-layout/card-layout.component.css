@@ -1,0 +1,19 @@
+.card-layout-container {
+  box-sizing: border-box;
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  gap: 50px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .card-layout-container {
+    grid-template-columns: repeat(1, 100%);
+    max-width: 100%;
+    padding: 10px;
+    margin: unset;
+  }
+}
