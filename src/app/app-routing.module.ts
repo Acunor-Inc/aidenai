@@ -4,9 +4,9 @@ import { CardComponent } from './card/card.component';
 import { CardDetailsComponent } from './card-details/card-details.component';
 
 const routes: Routes = [
-  { path: '', title: 'Card Display', component: CardComponent },
+  { path: 'ui5', title: 'Card Display', component: CardComponent },
   {
-    path: 'card-details',
+    path: 'ui5/card-details',
     title: 'Card Details',
     component: CardDetailsComponent,
   },
