@@ -1,13 +1,16 @@
 <div>
-	<h1 class="title">Apache Camel Projects</h1>
-	<div class="card-layout-container">
-		<ui5-card class="ui5card" *ngFor="let card of CardData">
-			<ui5-list separators="None">
-				<ui5-li image="{{ card.logo }}" description="{{ card.desc }}"
-					>{{ card.title }}
-				</ui5-li>
-				<a routerLink="/card-details"><ui5-button  design="Attention">Read More</ui5-button></a>
-			</ui5-list>
-		</ui5-card>
-	</div>
+  <ui5-title level="H1">Apache Camel Projects</ui5-title>
+  <div class="card-layout-container">
+    <ui5-card class="ui5card" *ngFor="let card of CardData">
+      <ui5-list separators="None">
+        <ui5-li image="{{ card?.logo }}">
+          <ui5-title level="H2"> {{ card.title }} </ui5-title>
+          <ui5-title level="H5">{{ card.desc }}</ui5-title>
+        </ui5-li>
+        <ui5-li>
+          <a routerLink="/card-details"><ui5-button>Read More</ui5-button></a>
+        </ui5-li>
+      </ui5-list>
+    </ui5-card>
+  </div>
 </div>

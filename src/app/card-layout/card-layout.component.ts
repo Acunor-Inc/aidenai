@@ -4,7 +4,7 @@ import data from '../../assets/data.json';
 @Component({
   selector: 'app-card-layout',
   templateUrl: './card-layout.component.html',
-  styleUrls: ['../card/card.component.css', './card-layout.component.css'],
+  styleUrls: ['./card-layout.component.css'],
 })
 export class CardLayoutComponent {
   CardData: Array<CardData> = data;
